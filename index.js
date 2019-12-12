@@ -117,7 +117,7 @@ module.exports = {
       .command('releases:reject [RELEASE]', 'Reject an approval on a release (as a release status check)', options, disapprove.bind(null, appkit))
   },
   update:function(){},
-  group:'releases',
-  help:'Manage releases (create, list, rollback)',
+  group:'approvals',
+  help:'Approve and reject releases, preventing or permitting pipeline promotions',
   primary:false
 };
